@@ -1,0 +1,8 @@
+.pio
+.cache
+compile_commands.json
+.clangd
+.agents
+.codex
+include/wifi_secret.h
+sdkconfig.esp32dev
