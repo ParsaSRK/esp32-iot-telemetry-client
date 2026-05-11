@@ -4,5 +4,5 @@ compile_commands.json
 .clangd
 .agents
 .codex
-include/wifi_secret.h
+include/app_config.h
 sdkconfig.esp32dev

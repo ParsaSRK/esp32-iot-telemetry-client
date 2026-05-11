@@ -1,7 +1,0 @@
-#pragma once
-
-#define WIFI_SSID "SAMPLE_SSID"
-#define WIFI_IDENTITY "SAMPLE_CCID"
-#define WIFI_USERNAME "SAMPLE_CCID"
-#define WIFI_PASS "SAMPLE_PASSWD"
-
