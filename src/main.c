@@ -26,10 +26,11 @@ void app_main(void) {
         if (err == ESP_OK) {
             ESP_LOGI(TAG, "Temperature=%.1fC Humidity=%.1f%%", reading.temperature_c, reading.humidity_percent);
             ESP_ERROR_CHECK(telemetry_client_send_report(&reading));
+            vTaskDelay(pdMS_TO_TICKS(10000));
         } else {
             ESP_LOGE(TAG, "DHT11 read failed: %s", esp_err_to_name(err));
+            vTaskDelay(pdMS_TO_TICKS(2000));
         }
 
-        vTaskDelay(pdMS_TO_TICKS(5000));
     }
 }
